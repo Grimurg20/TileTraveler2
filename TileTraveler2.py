@@ -3,12 +3,13 @@ NORTH = 'n'
 EAST = 'e'
 SOUTH = 's'
 WEST = 'w'
+
 def lever(coins):
 
     lever = input("Pull a lever (y/n): ")
     if lever == "y":
         coins += 1
-        print("You received 1 coin, your total is now", coins".")
+        print("You received 1 coin, your total is now {}.".format(coins))
         lever == ""
     return coins
 
@@ -112,4 +113,4 @@ while not victory:
     victory, col, row = play_one_move(col, row, valid_directions)
     coins = isLever(coins)
     
-print("Victory!")
+print("Victory! Total coins {}.".format(coins))
